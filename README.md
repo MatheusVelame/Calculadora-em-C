@@ -15,8 +15,8 @@ Este projeto consiste em uma calculadora didática desenvolvida em C, com o obje
 
 ### Conversão de Decimal para Ponto Flutuante:
 
-- Decimal para Float: Converte um número decimal para sua representação em ponto flutuante de 32 bits (float), mostrando os bits correspondentes ao sinal, expoente, expoente com bias, e fração.
-- Decimal para Double: Converte um número decimal para sua representação em ponto flutuante de 64 bits (double), também mostrando os bits correspondentes ao sinal, expoente, expoente com bias, e fração.
+- Decimal para Float: Converte um número decimal para sua representação em ponto flutuante de 32 bits (float).
+- Decimal para Double: Converte um número decimal para sua representação em ponto flutuante de 64 bits (double).
 
 
 ## Como Usar
@@ -29,18 +29,34 @@ Este projeto consiste em uma calculadora didática desenvolvida em C, com o obje
 
 </html>
 
-- Compile o código com um compilador C, utilizando o comando:
+- Para compilar o primeiro programa em C, utilize o comando:
 
 <html lang="pt">
 
-      gcc -o calculadora calculadora.c
+      gcc -o mvp2_q1 mvp2_q1.c
 
 </html>
 
-- Execute o programa, utilizando o comando:
+- Para compilar o segundo programa em C, utilize o comando:
 
 <html lang="pt">
 
-      ./calculadora
+      gcc -o mvp2_q2 mvp2_q2.c
+
+</html>
+
+- Para executar o primeiro programa, utilize o comando:
+
+<html lang="pt">
+
+      ./mvp2_q1
+
+</html>
+
+- Para executar o segundo programa, utilize o comando:
+
+<html lang="pt">
+
+      ./mvp2_q2
 
 </html>
