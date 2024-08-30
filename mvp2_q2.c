@@ -4,6 +4,7 @@
 * Disciplina: Infraestrutura de Hardware
 * Atividade: Calculadora didática de conversão entre bases e ponto flutuante de precisão simpes e dupla
 * Data: 30/08/2024
+* Link do Repositório: https://github.com/MatheusVelame/Calculadora-em-C.git
 *
 * Revisões e atualizações:
 * Thu Aug 29 10:23:59
