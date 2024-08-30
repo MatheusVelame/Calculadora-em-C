@@ -7,21 +7,14 @@ int main(){
     double numero_decimal;
     int continuar;
 
-    while(1){
-        printf("\nDigite o numero real decimal: ");
-        scanf("%lf", &numero_decimal);
+   
+    printf("\nDigite o numero real decimal: ");
+    scanf("%lf", &numero_decimal);
+    decimal_float(numero_decimal);
+    printf("\n\n");
 
-        decimal_float(numero_decimal);
 
-        printf("\n");
-        scanf("%d", &continuar);
-
-        if(continuar == 0){
-            break;
-        }else{
-            continue;
-        }
-    }
+    
 
     return 0;
 }
