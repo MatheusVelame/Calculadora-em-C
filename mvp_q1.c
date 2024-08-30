@@ -61,7 +61,8 @@ void decimal_base2(int numero_decimal, int bit_sinal){
         printf("Como o numero %d eh maior que 0, o bit de sinal sera %d\n\n", numero_decimal, bit_sinal);
     } else{
         bit_sinal = 1;
-        numero_decimal*=-1;
+        numero_decimal *= -1;
+        guardar_numero *= -1;
         printf("Como o numero %d eh menor que 0, o bit de sinal sera %d\n\n", numero_decimal, bit_sinal);
     }
 
@@ -94,6 +95,7 @@ void decimal_base8(int numero_decimal){
     if (numero_decimal < 0){
         printf("Como o numero %d eh menor que 0, o sinal sera -\n\n", numero_decimal);
         numero_decimal*=-1;
+        guardar_numero *= -1;
     }
     while(1){
         converter_numero[cont] = numero_decimal%8;
