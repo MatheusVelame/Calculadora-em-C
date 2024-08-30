@@ -1,3 +1,19 @@
+/*
+* Autor: Matheus Velame Pessoa
+* Período: 3º A
+* Disciplina: Infraestrutura de Hardware
+* Atividade: Calculadora didática de conversão entre bases e ponto flutuante de precisão simpes e dupla
+* Data: 30/08/2024
+*
+* Revisões e atualizações:
+* Thu Aug 29 10:23:59
+* Fri Aug 30 19:13:54
+* Fri Aug 30 18:18:59
+* Fri Aug 30 18:09:28
+* Fri Aug 30 17:53:51
+* Fri Aug 30 19:37:10
+*/
+
 #include <stdio.h>
 
 void decimal_float(double numero_decimal);

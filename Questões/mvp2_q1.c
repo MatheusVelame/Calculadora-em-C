@@ -1,3 +1,19 @@
+/*
+* Autor: Matheus Velame Pessoa
+* Período: 3º A
+* Disciplina: Infraestrutura de Hardware
+* Atividade: Calculadora didática de conversão entre bases e ponto flutuante de precisão simpes e dupla
+* Data: 30/08/2024
+*
+* Revisões e atualizações:
+* Thu Aug 29 10:23:59
+* Fri Aug 30 19:13:54
+* Fri Aug 30 18:18:59
+* Fri Aug 30 18:09:28
+* Fri Aug 30 17:53:51
+* Fri Aug 30 19:37:10
+*/
+
 #include <stdio.h>
 void decimal_base2(int numero_decimal, int bit_sinal);
 void decimal_base8(int numero_decimal);
@@ -89,7 +105,7 @@ void decimal_base2(int numero_decimal, int bit_sinal){
 
 
 void decimal_base8(int numero_decimal){
-    int converter_numero[100], cont=0, guardar_numero = numero_decimal;
+    int converter_numero[100], cont=0, guardar_numero = numero_decimal, aux = numero_decimal;
     printf("__________________________\n");
     printf("\nPasso a passo para tranformar o numero %d em octal:\n\n", numero_decimal);
     if (numero_decimal < 0){
@@ -109,7 +125,7 @@ void decimal_base8(int numero_decimal){
         guardar_numero = guardar_numero/8;
     }
 
-    if (numero_decimal < 0){
+    if (aux < 0){
         printf("Resultado: -");
     }else{
         printf("Resultado: ");
@@ -123,7 +139,7 @@ void decimal_base8(int numero_decimal){
 
 
 void decimal_base16(int numero_decimal){
-    int converter_numero[100], cont = 0, guardar_numero = numero_decimal;
+    int converter_numero[100], cont = 0, guardar_numero = numero_decimal, aux = numero_decimal;
     printf("__________________________\n");
     printf("\nPasso a passo para tranformar o numero %d em hexadecimal:\n\n", numero_decimal);
     if (numero_decimal < 0){
@@ -157,7 +173,7 @@ void decimal_base16(int numero_decimal){
     }
 
 
-    if (numero_decimal < 0){
+    if (aux < 0){
         printf("Resultado: 0x-");
     }else{
         printf("Resultado: 0x");
