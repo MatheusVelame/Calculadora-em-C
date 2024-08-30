@@ -19,13 +19,13 @@ Este projeto consiste em uma calculadora didática desenvolvida em C, com o obje
 - Decimal para Double: Converte um número decimal para sua representação em ponto flutuante de 64 bits (double), também mostrando os bits correspondentes ao sinal, expoente, expoente com bias, e fração.
 
 
-### Como Usar
+## Como Usar
 
 - Clone o repositório para o diretório navegado, utilizando o comando:
 
 <html lang="pt">
 
-      git clone https://github.com/MatheusVelame/Calculadora-em-Cgit
+      git clone https://github.com/MatheusVelame/Calculadora-em-C.git
 
 </html>
 
