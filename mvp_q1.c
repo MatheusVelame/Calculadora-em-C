@@ -52,22 +52,33 @@ int main(){
 
 
 void decimal_base2(int numero_decimal, int bit_sinal){
-    int cont=0, converter_numero[100];
-    printf("\n\nNumero binario: ");
+    int cont=0, converter_numero[100], guardar_numero = numero_decimal;
+    printf("__________________________\n");
+    printf("\nPasso a passo para tranformar o numero %d em binario:\n\n", numero_decimal);
+
     if (numero_decimal >= 0){
         bit_sinal = 0;
+        printf("Como o numero %d eh maior que 0, o bit de sinal sera %d\n\n", numero_decimal, bit_sinal);
     } else{
         bit_sinal = 1;
         numero_decimal*=-1;
+        printf("Como o numero %d eh menor que 0, o bit de sinal sera %d\n\n", numero_decimal, bit_sinal);
     }
+
+    printf("Convertendo para o numero para base dois:\n");
+
     while(1){
         converter_numero[cont] = numero_decimal%2;
         numero_decimal = numero_decimal/2;
+        printf("%d Dividido por 2: %d\n", guardar_numero, numero_decimal);
+        printf("Resto: %d\n\n", converter_numero[cont]);
         if (numero_decimal == 0){
             break;
         }
         cont++;
+        guardar_numero = guardar_numero/2;
     }
+    printf("Resultado: ");
     printf("%d ", bit_sinal);
     for (int t=cont;t>=0;t--){
         printf("%d", converter_numero[t]);
@@ -77,21 +88,32 @@ void decimal_base2(int numero_decimal, int bit_sinal){
 
 
 void decimal_base8(int numero_decimal){
-    int converter_numero[100], cont=0;
-    printf("\n\nNumero octal: ");
+    int converter_numero[100], cont=0, guardar_numero = numero_decimal;
+    printf("__________________________\n");
+    printf("\nPasso a passo para tranformar o numero %d em binario:\n\n", numero_decimal);
     if (numero_decimal < 0){
-        printf("-");
+        printf("Como o numero %d eh menor que 0, o sinal sera -\n\n", numero_decimal);
         numero_decimal*=-1;
     }
     while(1){
         converter_numero[cont] = numero_decimal%8;
         numero_decimal = numero_decimal/8;
+        printf("%d Dividido por 2: %d\n", guardar_numero, numero_decimal);
+        printf("Resto: %d\n\n", converter_numero[cont]);
         if (numero_decimal == 0){
             break;
         }
         cont++;
+        guardar_numero = guardar_numero/2;
     }
-    for (int t=cont;t>=0;t--){
+
+    if (numero_decimal < 0){
+        printf("Resultado: -");
+    }else{
+        printf("Resultado: ");
+    }
+
+    for (int t=cont;t>=0;t--){ 
         printf("%d", converter_numero[t]);
         converter_numero[t] = 0;
     }
