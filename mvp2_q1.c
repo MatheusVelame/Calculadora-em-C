@@ -7,12 +7,12 @@
 * Link do Repositório: https://github.com/MatheusVelame/Calculadora-em-C.git
 *
 * Revisões e atualizações:
-* Thu Aug 29 10:23:59
-* Fri Aug 30 19:13:54
-* Fri Aug 30 18:18:59
-* Fri Aug 30 18:09:28
-* Fri Aug 30 17:53:51
-* Fri Aug 30 19:37:10
+* 1 questao Thu Aug 29 10:23:59
+* 1 questao Fri Aug 30 19:13:54
+* 1 questao Fri Aug 30 18:18:59
+* 1 questao Fri Aug 30 18:09:28
+* 2 questao Fri Aug 30 17:53:51
+* 3 questao Fri Aug 30 19:37:10
 */
 
 #include <stdio.h>
